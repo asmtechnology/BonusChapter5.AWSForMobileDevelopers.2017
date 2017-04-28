@@ -26,6 +26,10 @@
 		9135A4E61E81AE9500374DAE /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9135A4E31E81AE9500374DAE /* Bolts.framework */; };
 		9135A4E71E81AE9500374DAE /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9135A4E41E81AE9500374DAE /* FBSDKCoreKit.framework */; };
 		9135A4E81E81AE9500374DAE /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9135A4E51E81AE9500374DAE /* FBSDKLoginKit.framework */; };
+		91393AFA1EB30E0600FF16AC /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91393AF81EB30DCF00FF16AC /* UserNotifications.framework */; };
+		91393AFC1EB3124900FF16AC /* SNSController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91393AFB1EB3124900FF16AC /* SNSController.swift */; };
+		91393AFE1EB3130300FF16AC /* AWSSNS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91393AFD1EB3130300FF16AC /* AWSSNS.framework */; };
+		91393AFF1EB3130300FF16AC /* AWSSNS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 91393AFD1EB3130300FF16AC /* AWSSNS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		91B2DA311E8A3C2500FCFD3A /* GoogleAppUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91B2DA2C1E8A3C2500FCFD3A /* GoogleAppUtilities.framework */; };
 		91B2DA321E8A3C2500FCFD3A /* GoogleSignIn.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 91B2DA2D1E8A3C2500FCFD3A /* GoogleSignIn.bundle */; };
 		91B2DA331E8A3C2500FCFD3A /* GoogleSignIn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91B2DA2E1E8A3C2500FCFD3A /* GoogleSignIn.framework */; };
@@ -64,6 +68,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				9122B04F1E6F43130024AE10 /* AWSCognito.framework in Embed Frameworks */,
+				91393AFF1EB3130300FF16AC /* AWSSNS.framework in Embed Frameworks */,
 				9122B0511E6F43130024AE10 /* AWSCognitoIdentityProvider.framework in Embed Frameworks */,
 				91D593721E9A8F940094160B /* AWSDynamoDB.framework in Embed Frameworks */,
 				9122B0531E6F43130024AE10 /* AWSCore.framework in Embed Frameworks */,
@@ -93,6 +98,10 @@
 		9135A4E31E81AE9500374DAE /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "FacebookSDKs-iOS-4.20.2/Bolts.framework"; sourceTree = "<group>"; };
 		9135A4E41E81AE9500374DAE /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = "FacebookSDKs-iOS-4.20.2/FBSDKCoreKit.framework"; sourceTree = "<group>"; };
 		9135A4E51E81AE9500374DAE /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = "FacebookSDKs-iOS-4.20.2/FBSDKLoginKit.framework"; sourceTree = "<group>"; };
+		91393AF81EB30DCF00FF16AC /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		91393AFB1EB3124900FF16AC /* SNSController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SNSController.swift; sourceTree = "<group>"; };
+		91393AFD1EB3130300FF16AC /* AWSSNS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSSNS.framework; path = Carthage/Build/iOS/AWSSNS.framework; sourceTree = "<group>"; };
+		91393B001EB3151F00FF16AC /* AWSChat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AWSChat.entitlements; sourceTree = "<group>"; };
 		9140BCF31E825DF200AD650A /* ObjCBridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ObjCBridging-Header.h"; sourceTree = "<group>"; };
 		91B2DA2C1E8A3C2500FCFD3A /* GoogleAppUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleAppUtilities.framework; path = google_signin_sdk_4_0_1/GoogleAppUtilities.framework; sourceTree = "<group>"; };
 		91B2DA2D1E8A3C2500FCFD3A /* GoogleSignIn.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleSignIn.bundle; path = google_signin_sdk_4_0_1/GoogleSignIn.bundle; sourceTree = "<group>"; };
@@ -128,6 +137,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91393AFA1EB30E0600FF16AC /* UserNotifications.framework in Frameworks */,
 				91B2DA3A1E8A3CED00FCFD3A /* SystemConfiguration.framework in Frameworks */,
 				91B2DA381E8A3CE700FCFD3A /* SafariServices.framework in Frameworks */,
 				9135A4E71E81AE9500374DAE /* FBSDKCoreKit.framework in Frameworks */,
@@ -138,6 +148,7 @@
 				9122B0501E6F43130024AE10 /* AWSCognitoIdentityProvider.framework in Frameworks */,
 				91B2DA311E8A3C2500FCFD3A /* GoogleAppUtilities.framework in Frameworks */,
 				9122B0521E6F43130024AE10 /* AWSCore.framework in Frameworks */,
+				91393AFE1EB3130300FF16AC /* AWSSNS.framework in Frameworks */,
 				91D569801E9F918F0046E158 /* AWSS3.framework in Frameworks */,
 				91B2DA341E8A3C2500FCFD3A /* GoogleSignInDependencies.framework in Frameworks */,
 				9135A4E61E81AE9500374DAE /* Bolts.framework in Frameworks */,
@@ -151,6 +162,7 @@
 		9122B0231E6E98070024AE10 = {
 			isa = PBXGroup;
 			children = (
+				91393AFD1EB3130300FF16AC /* AWSSNS.framework */,
 				91D5697F1E9F918F0046E158 /* AWSS3.framework */,
 				91D593701E9A8F940094160B /* AWSDynamoDB.framework */,
 				91B2DA2B1E8A3B7A00FCFD3A /* GoogleSDK */,
@@ -172,6 +184,7 @@
 		9122B02E1E6E98070024AE10 /* AWSChat */ = {
 			isa = PBXGroup;
 			children = (
+				91393B001EB3151F00FF16AC /* AWSChat.entitlements */,
 				91D593611E9A6B670094160B /* Model */,
 				91B2DA3B1E8AEB7C00FCFD3A /* GoogleService-Info.plist */,
 				9122B0741E7842170024AE10 /* Controller */,
@@ -218,6 +231,7 @@
 				91D5935F1E9964EE0094160B /* DynamoDBController.swift */,
 				91D5936E1E9A7A1E0094160B /* ChatManager.swift */,
 				91004C0F1EA354E6000772E7 /* S3Controller.swift */,
+				91393AFB1EB3124900FF16AC /* SNSController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -250,6 +264,7 @@
 		91B2DA361E8A3CE600FCFD3A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				91393AF81EB30DCF00FF16AC /* UserNotifications.framework */,
 				91D5697D1E9F91630046E158 /* AWSSES.framework */,
 				91B2DA391E8A3CED00FCFD3A /* SystemConfiguration.framework */,
 				91B2DA371E8A3CE700FCFD3A /* SafariServices.framework */,
@@ -316,6 +331,11 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = R53MV2MVHS;
 						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -396,6 +416,7 @@
 				9122B0761E7842510024AE10 /* CognitoUserPoolController.swift in Sources */,
 				91D569871EA0C3C80046E158 /* SentTextTableViewCell.swift in Sources */,
 				9122B0461E6E986C0024AE10 /* HomeViewController.swift in Sources */,
+				91393AFC1EB3124900FF16AC /* SNSController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,6 +537,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AWSChat/AWSChat.entitlements;
 				DEVELOPMENT_TEAM = R53MV2MVHS;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -527,10 +549,10 @@
 				INFOPLIST_FILE = AWSChat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.asmtechnology.AWSChat;
+				PRODUCT_BUNDLE_IDENTIFIER = com.asmtechnology.awschat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "7b8e9265-2a6f-414b-a882-966c19439132";
-				PROVISIONING_PROFILE_SPECIFIER = "Development Provisioning Profile";
+				PROVISIONING_PROFILE = "0cc031dc-237b-4cb0-b159-e0652c38f9a9";
+				PROVISIONING_PROFILE_SPECIFIER = AWSChatDevelopmentProfile;
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/AWSChat/ObjCBridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
@@ -540,6 +562,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AWSChat/AWSChat.entitlements;
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -551,7 +574,7 @@
 				INFOPLIST_FILE = AWSChat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.asmtechnology.AWSChat;
+				PRODUCT_BUNDLE_IDENTIFIER = com.asmtechnology.awschat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/AWSChat/ObjCBridging-Header.h";
 				SWIFT_VERSION = 3.0;

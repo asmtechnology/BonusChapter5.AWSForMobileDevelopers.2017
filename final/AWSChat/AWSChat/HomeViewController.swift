@@ -45,6 +45,16 @@ class HomeViewController: UIViewController {
                 self.tableView.reloadData()
             }
         }
+        
+        // submit push token to SNS
+        let snsController = SNSController.sharedInstance
+        snsController.registerToken { (error) in
+            if let error = error {
+                self.displayError(error: error as NSError)
+                return
+            }
+        }
+        
     }
 
     override func didReceiveMemoryWarning() {
